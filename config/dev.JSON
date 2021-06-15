@@ -1,4 +1,4 @@
 
 {
-    "db":"mongodb://localhost/hamza"
+    "db":"mongodb+srv://hamza:Hamza12345@cluster0.kk95x.mongodb.net/useBrain?retryWrites=true&w=majority"
 }
