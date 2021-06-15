@@ -22,11 +22,16 @@ router.post("/",  async (req, res) => {
 
 
   //get categories
+
   router.get("/", async (req, res) => {
-    
+    try{
     let allcat = await category.find({ });
     console.log(allcat);
     return res.send(allcat);
+    }catch(err){
+      console.log(err);
+      return res.status(400).send("Error from Admin login!");}
   });
+
 
 module.exports = router;
