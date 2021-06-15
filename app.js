@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 mongoose
-  .connect("mongodb://localhost/hamza", {
+  .connect("mongodb+srv://hamza:U4SCjmFlhbsNWqae@cluster0.kk95x.mongodb.net/useBrain?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
