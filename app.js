@@ -45,13 +45,13 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-mongoose
-  .connect("mongodb+srv://hamza:U4SCjmFlhbsNWqae@cluster0.kk95x.mongodb.net/useBrain?retryWrites=true&w=majority", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("Connected to Mongo...."))
-  .catch((error) => console.log(error.message));
+// mongoose
+//   .connect("mongodb+srv://hamza:U4SCjmFlhbsNWqae@cluster0.kk95x.mongodb.net/useBrain?retryWrites=true&w=majority", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => console.log("Connected to Mongo...."))
+//   .catch((error) => console.log(error.message));
 
 
 module.exports = app;
